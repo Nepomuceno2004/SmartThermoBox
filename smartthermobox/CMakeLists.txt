@@ -35,18 +35,21 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(smartthermobox smartthermobox.c )
+add_executable(smartthermobox smartthermobox.c lib/ssd1306.c)
 
 pico_set_program_name(smartthermobox "smartthermobox")
 pico_set_program_version(smartthermobox "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(smartthermobox 0)
-pico_enable_stdio_usb(smartthermobox 0)
+pico_enable_stdio_usb(smartthermobox 1)
 
 # Add the standard library to the build
 target_link_libraries(smartthermobox
-        pico_stdlib)
+        pico_stdlib
+        hardware_adc
+        hardware_i2c
+        )
 
 # Add the standard include files to the build
 target_include_directories(smartthermobox PRIVATE
