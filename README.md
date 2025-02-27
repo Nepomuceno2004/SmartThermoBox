@@ -29,5 +29,7 @@ Este projeto é uma simulação de uma caixa térmica inteligente, capaz de moni
    - Tela com valores mínimos registrados.
 6. O sistema exibirá alertas caso os valores ultrapassem os limites definidos.
 
+## Vídeo de funcionamento
+[DRIVE](https://drive.google.com/file/d/12Xwqt4VrW9-_G1dwULYK1GX4OziRLr6I/view?usp=sharing)
 ## Autor
 ### Matheus Nepomuceno Souza
